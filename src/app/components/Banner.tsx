@@ -4,7 +4,7 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20'>
+    <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 bg-white'>
       <div className="flex flex-col sm:flex-row justify-between items-center mb-8 lg:mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-0">
           Banners Selling Products
