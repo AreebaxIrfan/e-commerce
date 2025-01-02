@@ -2,7 +2,7 @@
 
 import { useCart } from "@/app/components/CartContext";
 import { useEffect, useState } from "react";
-import Counter from "../components/Counter";
+import Counter from "@/app/components/Counter";
 import Nav from "../components/nav";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
