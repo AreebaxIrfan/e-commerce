@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useCart } from "@/app/components/CartContext";
 import { useEffect, useState } from "react";
 import Nav from "@/app/components/nav";
-import Counter from "@/app/components/Counter";
 import { motion } from "framer-motion";
 
 interface Feature {
@@ -120,16 +119,7 @@ const FeatureDetails = ({ params }: { params: { feature: string } }) => {
                   ₹{feature.price.toLocaleString()}
                 </span>
               </div>
-              <div className="mt-6 flex items-center">
-                <span className="mr-3 text-gray-700">Quantity:</span>
-                <Counter
-                 value={1}
-                 onChange={(newValue) => handleQuantityChange(feature.id, newValue)}
-                 min={1}
-                 max={10}
-                />
-              </div>
-              <div className="mt-8">
+              <div className="mt-3">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
