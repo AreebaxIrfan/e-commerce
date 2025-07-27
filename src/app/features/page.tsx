@@ -18,7 +18,7 @@ interface Feature {
 }
 
 
-const page = () => {
+const Page = () => {
     const [features, setFeatures] = useState<Feature[]>([]);
     const { cart, addToCart } = useCart();
 
@@ -145,4 +145,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
